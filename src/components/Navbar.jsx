@@ -1,17 +1,21 @@
-import { Flex, Image, Text, IconButton, Drawer, DrawerBody, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, useBreakpointValue } from "@chakra-ui/react";
+import { Flex, Image, Text, IconButton, Drawer, DrawerBody, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, useBreakpointValue } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
-const Link = ({ to, text }) => {
+const Link = ({ to, text, isMobile }) => {
   return (
     <NavLink
       to={to}
       style={({ isActive }) => ({
         textDecoration: isActive ? "underline" : "none",
-        fontSize: "medium",
+        fontSize: isMobile ? "20px" : "medium",
+        color: isMobile ? "white" : "inherit",
         display: "block",
-        padding: "0.5rem 1rem",
+        padding: "0.75rem 1rem",
+        textTransform: isMobile ? "uppercase" : "none",
+        fontFamily: isMobile ? "'Lexend', sans-serif" : "inherit",
+        fontWeight: isMobile ? "700" : "normal",
       })}>
       {text}
     </NavLink>
@@ -33,52 +37,35 @@ const Navbar = () => {
             </Text>
           )}
         </Flex>
-        {isMobile && (
-          <IconButton
-            aria-label="Open Menu"
-            icon={<HamburgerIcon />}
-            onClick={onOpen}
-            size="lg"
-            variant="unstyled" // Removes background
-            _focus={{ boxShadow: "none" }} // Removes focus outline
-          />
-        )}
+        {isMobile && <IconButton aria-label="Open Menu" icon={<HamburgerIcon w={12} h={12} />} onClick={onOpen} size="lg" variant="unstyled" _focus={{ boxShadow: "none" }} color={"#f17400"} />}
         <Flex display={isMobile ? "none" : "flex"} alignItems={"center"} justifyContent={"space-between"} flex={2} fontFamily={"Roboto"} pl={"2rem"} pr={"2rem"}>
-          <Link to={"/"} text={"Home"} />
-          <Link to={"/facilities"} text={"Facilities"} />
-          <Link to={"/incubation"} text={"Incubation"} />
-          <Link to={"/services"} text={"Services"} />
-          <Link to={"/cohort"} text={"Cohort"} />
-          <Link to={"/apply"} text={"Apply"} />
-          <Link to={"/gallery"} text={"Gallery"} />
-          <Link to={"/about"} text={"BGIIES Till Now"} />
-          <Link to={"/sisfs"} text={"SISFS"} />
+          <Link to={"/"} text={"Home"} isMobile={isMobile} />
+          <Link to={"/facilities"} text={"Facilities"} isMobile={isMobile} />
+          <Link to={"/incubation"} text={"Incubation"} isMobile={isMobile} />
+          <Link to={"/services"} text={"Services"} isMobile={isMobile} />
+          <Link to={"/cohort"} text={"Cohort"} isMobile={isMobile} />
+          <Link to={"/apply"} text={"Apply"} isMobile={isMobile} />
+          <Link to={"/gallery"} text={"Gallery"} isMobile={isMobile} />
+          <Link to={"/about"} text={"BGIIES Till Now"} isMobile={isMobile} />
+          <Link to={"/sisfs"} text={"SISFS"} isMobile={isMobile} />
         </Flex>
       </Flex>
 
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={onClose}
-        size="md" // Base size
-      >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="md">
         <DrawerOverlay />
-        <DrawerContent width="250px">
-          {" "}
-          {/* Custom width */}
-          <DrawerCloseButton />
-          <DrawerHeader>Menu</DrawerHeader>
-          <DrawerBody>
+        <DrawerContent bg={"#f17400"} width="250px" pt="4rem">
+          <DrawerCloseButton variant="outline" size="lg" color="white" _hover={{ bg: "transparent", borderColor: "transparent" }} fontSize="38px" p={10} />
+          <DrawerBody mt="2rem">
             <Flex direction="column" p="4">
-              <Link to={"/"} text={"Home"} />
-              <Link to={"/facilities"} text={"Facilities"} />
-              <Link to={"/incubation"} text={"Incubation"} />
-              <Link to={"/services"} text={"Services"} />
-              <Link to={"/cohort"} text={"Cohort"} />
-              <Link to={"/apply"} text={"Apply"} />
-              <Link to={"/gallery"} text={"Gallery"} />
-              <Link to={"/about"} text={"BGIIES Till Now"} />
-              <Link to={"/sisfs"} text={"SISFS"} />
+              <Link to={"/"} text={"Home"} isMobile={isMobile} />
+              <Link to={"/facilities"} text={"Facilities"} isMobile={isMobile} />
+              <Link to={"/incubation"} text={"Incubation"} isMobile={isMobile} />
+              <Link to={"/services"} text={"Services"} isMobile={isMobile} />
+              <Link to={"/cohort"} text={"Cohort"} isMobile={isMobile} />
+              <Link to={"/apply"} text={"Apply"} isMobile={isMobile} />
+              <Link to={"/gallery"} text={"Gallery"} isMobile={isMobile} />
+              <Link to={"/about"} text={"BGIIES Till Now"} isMobile={isMobile} />
+              <Link to={"/sisfs"} text={"SISFS"} isMobile={isMobile} />
             </Flex>
           </DrawerBody>
         </DrawerContent>
