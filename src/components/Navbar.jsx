@@ -14,7 +14,7 @@ const Link = ({ to, text, isMobile }) => {
         display: "block",
         padding: "0.75rem 1rem",
         textTransform: isMobile ? "uppercase" : "none",
-        fontFamily: isMobile ? "'Lexend', sans-serif" : "inherit",
+        fontFamily: "'Lexend', sans-serif",
         fontWeight: isMobile ? "700" : "normal",
       })}>
       {text}
