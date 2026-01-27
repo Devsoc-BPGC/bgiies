@@ -31,11 +31,8 @@ export default function FoundersPage() {
             className="text-4xl md:text-5xl font-bold text-[#2E1F47] mb-4"
             style={{ fontFamily: lexend.style.fontFamily }}
           >
-            Founder Projects
+            Bitsian Founders List
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore innovative projects created by our talented founders at BGIIES
-          </p>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
         </div>
 
