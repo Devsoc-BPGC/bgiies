@@ -16,7 +16,7 @@ export default function TestimonialCarousel({
         "Being a Quark CA helped me grow. I became better at talking to people and organizing events. The other ambassadors were so helpful. I'll always remember this experience",
       author: 'Ajay Thakur',
       bgColor: 'bg-[#FFAF18]', // Yellow
-      textColor: 'text-gray-800',
+      textColor: 'text-white',
     },
     {
       quote:
