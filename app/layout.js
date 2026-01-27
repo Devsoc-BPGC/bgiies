@@ -9,11 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "BGIIES",
+  icons: {
+    icon: "/bgiies_logo.png",
+  },
   description: "Official Website of BGIIES Bits Pilani Goa Campus",
-  icons : {
-    icon : "/bgiieslogo.jpg"
-  }
 };
+
 
 export default function RootLayout({ children }) {
   return (
