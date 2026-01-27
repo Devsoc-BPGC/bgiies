@@ -1,0 +1,149 @@
+{
+  "market_data": {
+    "global_burn_care_market": {
+      "2024": 2.5,
+      "2025": 2.68,
+      "2030": 4.23,
+      "2033": 4.88,
+      "cagr": 7.18
+    },
+    "india_burn_care_market": {
+      "2023": 84.5,
+      "2030": 165.0,
+      "cagr": 10.0
+    },
+    "india_burn_statistics": {
+      "annual_injuries": 7000000,
+      "annual_deaths": 140000,
+      "deformities": 240000,
+      "moderate_severe_burns": 1000000
+    },
+    "competitor_analysis": [
+      {
+        "product": "Silver Sulfadiazine",
+        "healing_time": 45,
+        "cost": 15000,
+        "side_effects": "High",
+        "burn_depth": "1st degree"
+      },
+      {
+        "product": "Jatyadi Oil",
+        "healing_time": 45,
+        "cost": 750,
+        "side_effects": "Low",
+        "burn_depth": "Minor"
+      },
+      {
+        "product": "Burnol",
+        "healing_time": 7,
+        "cost": 300,
+        "side_effects": "Low",
+        "burn_depth": "1st degree"
+      },
+      {
+        "product": "Burnicol",
+        "healing_time": 20,
+        "cost": 600,
+        "side_effects": "None",
+        "burn_depth": "2nd & 3rd degree"
+      }
+    ],
+    "burnicol_advantages": {
+      "healing_time_reduction": 75,
+      "infection_prevention": 100,
+      "cost_reduction": 70,
+      "scar_minimization": 90,
+      "patients_treated": 30000,
+      "zero_complications": true
+    }
+  },
+  "market_projection": [
+    {
+      "Year": 2024,
+      "Global_Market_USD_Billion": 2.5,
+      "India_Market_USD_Million": 84.5
+    },
+    {
+      "Year": 2025,
+      "Global_Market_USD_Billion": 2.68,
+      "India_Market_USD_Million": 93.0
+    },
+    {
+      "Year": 2026,
+      "Global_Market_USD_Billion": 2.95,
+      "India_Market_USD_Million": 102.3
+    },
+    {
+      "Year": 2027,
+      "Global_Market_USD_Billion": 3.25,
+      "India_Market_USD_Million": 112.5
+    },
+    {
+      "Year": 2028,
+      "Global_Market_USD_Billion": 3.58,
+      "India_Market_USD_Million": 123.8
+    },
+    {
+      "Year": 2029,
+      "Global_Market_USD_Billion": 3.94,
+      "India_Market_USD_Million": 136.2
+    },
+    {
+      "Year": 2030,
+      "Global_Market_USD_Billion": 4.23,
+      "India_Market_USD_Million": 165.0
+    }
+  ],
+  "competitor_comparison": [
+    {
+      "product": "Silver Sulfadiazine",
+      "healing_time": 45,
+      "cost": 15000,
+      "side_effects": "High",
+      "burn_depth": "1st degree"
+    },
+    {
+      "product": "Jatyadi Oil",
+      "healing_time": 45,
+      "cost": 750,
+      "side_effects": "Low",
+      "burn_depth": "Minor"
+    },
+    {
+      "product": "Burnol",
+      "healing_time": 7,
+      "cost": 300,
+      "side_effects": "Low",
+      "burn_depth": "1st degree"
+    },
+    {
+      "product": "Burnicol",
+      "healing_time": 20,
+      "cost": 600,
+      "side_effects": "None",
+      "burn_depth": "2nd & 3rd degree"
+    }
+  ],
+  "usp_comparison": [
+    {
+      "Feature": "Healing Time (days)",
+      "Traditional_Treatment": 45,
+      "Burnicol": 20
+    },
+    {
+      "Feature": "Cost (INR)",
+      "Traditional_Treatment": 15000,
+      "Burnicol": 600
+    },
+    {
+      "Feature": "Infection Rate (%)",
+      "Traditional_Treatment": 20,
+      "Burnicol": 0
+    },
+    {
+      "Feature": "Scar Formation (%)",
+      "Traditional_Treatment": 60,
+      "Burnicol": 10
+    }
+  ]
+}

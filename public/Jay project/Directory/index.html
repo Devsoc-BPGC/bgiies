@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITS Pilani: India's Entrepreneurship Powerhouse</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* Enhanced status badge styles for startups directory */
+    .startups-table .status {
+        text-align: center;
+        vertical-align: middle;
+    }
+    .status-badge {
+        display: inline-block;
+        min-width: 90px;
+        padding: 0.35em 0.8em;
+        font-size: 0.98em;
+        font-weight: 600;
+        border-radius: 1.2em;
+        text-align: center;
+        letter-spacing: 0.02em;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+        border: none;
+        margin: 0 auto;
+        transition: background 0.2s, color 0.2s;
+    }
+    .status-badge.unicorn {
+        background: linear-gradient(90deg, #f59e42 0%, #fbbf24 100%);
+        color: #fff;
+        border: 1px solid #fbbf24;
+        box-shadow: 0 2px 8px rgba(251,191,36,0.12);
+    }
+    .status-badge.acquired {
+        background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+        color: #fff;
+        border: 1px solid #10b981;
+        box-shadow: 0 2px 8px rgba(16,185,129,0.12);
+    }
+    .status-badge.listed {
+        background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+        color: #fff;
+        border: 1px solid #2563eb;
+        box-shadow: 0 2px 8px rgba(37,99,235,0.12);
+    }
+    .status-badge.active {
+        background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+        color: #fff;
+        border: 1px solid #6366f1;
+        box-shadow: 0 2px 8px rgba(99,102,241,0.12);
+    }
+    .status-badge.closed {
+        background: linear-gradient(90deg, #ef4444 0%, #f87171 100%);
+        color: #fff;
+        border: 1px solid #ef4444;
+        box-shadow: 0 2px 8px rgba(239,68,68,0.12);
+    }
+    /* Fallback for unknown status */
+    .status-badge.info {
+        background: #e5e7eb;
+        color: #374151;
+        border: 1px solid #d1d5db;
+    }
+    .startups-table td.status {
+        text-align: center;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <h3>BITS Pilani</h3>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#unicorns">Unicorns</a></li>
+                    <li><a href="#startups">Startups</a></li>
+                    <li><a href="#acquisitions">Acquisitions</a></li>
+                    <li><a href="#geography">Geography</a></li>
+                    <li><a href="#ecosystem">Ecosystem</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">BITS Pilani: India's Entrepreneurship Powerhouse</h1>
+                <p class="hero-subtitle">Pioneering innovation and building unicorns for over three decades</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card" data-stat="founders">
+                        <div class="stat-number">1900</div>
+                        <div class="stat-label">Startups</div>
+                    </div>
+                    <div class="stat-card" data-stat="valuation">
+                        <div class="stat-number">$60B+</div>
+                        <div class="stat-label">Combined Valuation</div>
+                    </div>
+                    <div class="stat-card" data-stat="unicorns">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Unicorns</div>
+                    </div>
+                    <div class="stat-card" data-stat="employment">
+                        <div class="stat-number">113K+</div>
+                        <div class="stat-label">Jobs produced</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unicorns Section -->
+    <section id="unicorns" class="section">
+        <div class="container">
+            <h2 class="section-title">Unicorns & Major Exits</h2>
+            <div class="unicorns-grid">
+                <div class="unicorn-card">
+                    <div class="unicorn-header">
+                        <h3>SanDisk</h3>
+                        <div class="status status--success">$19B Exit</div>
+                    </div>
+                    <div class="unicorn-details">
+                        <p class="founder">Founder: Sanjay Mehrotra</p>
+                        <p class="description">Semiconductors - Flash memory pioneer</p>
+                        <p class="origin">Origin: Kanpur (Tier 2)</p>
+                    </div>
+                </div>
+
+                <div class="unicorn-card">
+                    <div class="unicorn-header">
+                        <h3>Swiggy</h3>
+                        <div class="status status--warning">$11B+ Unicorn</div>
+                    </div>
+                    <div class="unicorn-details">
+                        <p class="founder">Founder: Sriharsha Majety</p>
+                        <p class="description">Food Delivery - Market leader</p>
+                        <p class="origin">Origin: Vijayawada (Tier 2)</p>
+                    </div>
+                </div>
+
+                <div class="unicorn-card">
+                    <div class="unicorn-header">
+                        <h3>Postman</h3>
+                        <div class="status status--warning">$7.5B Unicorn</div>
+                    </div>
+                    <div class="unicorn-details">
+                        <p class="founder">Founder: Abhinav Asthana</p>
+                        <p class="description">SaaS/API - Development platform</p>
+                        <p class="origin">Origin: Basti (Tier 3)</p>
+                    </div>
+                </div>
+
+                <div class="unicorn-card">
+                    <div class="unicorn-header">
+                        <h3>OfBusiness</h3>
+                        <div class="status status--warning">$5B Unicorn</div>
+                    </div>
+                    <div class="unicorn-details">
+                        <p class="founder">Founders: Asish Mohapatra, Bhuvan Gupta</p>
+                        <p class="description">B2B Commerce - SME platform</p>
+                        <p class="origin">Origin: Bhubaneswar/Udhampur (Tier 2/3)</p>
+                    </div>
+                </div>
+
+                <div class="unicorn-card">
+                    <div class="unicorn-header">
+                        <h3>Eruditus</h3>
+                        <div class="status status--warning">$3.2B Unicorn</div>
+                    </div>
+                    <div class="unicorn-details">
+                        <p class="founder">Founder: Ashwin Damera</p>
+                        <p class="description">EdTech - Executive education</p>
+                        <p class="origin">Origin: Mumbai (Tier 1)</p>
+                    </div>
+                </div>
+
+                <div class="unicorn-card">
+                    <div class="unicorn-header">
+                        <h3>Groww</h3>
+                        <div class="status status--warning">$3B+ Unicorn</div>
+                    </div>
+                    <div class="unicorn-details">
+                        <p class="founder">Founder: Lalit Keshre</p>
+                        <p class="description">FinTech - Investment platform</p>
+                        <p class="origin">Origin: Noida (Tier 1)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Startups Directory -->
+    <section id="startups" class="section">
+        <div class="container">
+            <h2 class="section-title">Complete Startups Directory</h2>
+            
+            <!-- Search and Filter Controls -->
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search startups, founders, or sectors...">
+                </div>
+                <div class="filter-row">
+                    <select id="tierFilter" class="form-control">
+                        <option value="">All Tiers</option>
+                        <option value="Tier 1">Tier 1</option>
+                        <option value="Tier 2">Tier 2</option>
+                        <option value="Tier 3">Tier 3</option>
+                    </select>
+                    <select id="sectorFilter" class="form-control">
+                        <option value="">All Sectors</option>
+                        <option value="FinTech">FinTech</option>
+                        <option value="E-commerce">E-commerce</option>
+                        <option value="SaaS/API">SaaS/API</option>
+                        <option value="Food Delivery">Food Delivery</option>
+                        <option value="EdTech">EdTech</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="B2B Commerce">B2B Commerce</option>
+                        <option value="Semiconductors">Semiconductors</option>
+                        <option value="IT Services">IT Services</option>
+                        <option value="Biotech">Biotech</option>
+                        <option value="TravelTech">TravelTech</option>
+                        <option value="AdTech">AdTech</option>
+                        <option value="Mapping">Mapping</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Consumer Electronics">Consumer Electronics</option>
+                        <option value="Email/Internet">Email/Internet</option>
+                        <option value="Internet Infrastructure">Internet Infrastructure</option>
+                        <option value="Assistive EdTech">Assistive EdTech</option>
+                        <option value="Food Services">Food Services</option>
+                        <option value="Infrastructure">Infrastructure</option>
+                        <option value="Media">Media</option>
+                        <option value="EDA">EDA</option>
+                    </select>
+                    <select id="statusFilter" class="form-control">
+                        <option value="">All Status</option>
+                        <option value="Unicorn">Unicorn</option>
+                        <option value="Acquired">Acquired</option>
+                        <option value="Listed">Listed</option>
+                        <option value="Active">Active</option>
+                        <option value="Closed">Closed</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Startups Table -->
+            <div class="startups-table-container">
+                <table class="startups-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Founders</th>
+                            <th>Origin City (Tier)</th>
+                            <th>Sector</th>
+                            <th>Valuation</th>
+                            <th>Status</th>
+                            <th>Exit Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="startupsTableBody">
+                        <!-- Table rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Add this button after the startups table -->
+<div class="view-all-container">
+    <button id="viewAllButton" class="view-all-btn">
+        <i class="fas fa-chevron-down"></i>
+        View All Directory
+    </button>
+</div>
+
+            <div class="results-count">
+                <span id="resultsCount">29 startups found</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acquisitions Timeline -->
+    <section id="acquisitions" class="section">
+        <div class="container">
+            <h2 class="section-title">Major Acquisitions Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1998</div>
+                    <div class="timeline-content">
+                        <h3>Hotmail</h3>
+                        <p class="timeline-founder">Sabeer Bhatia</p>
+                        <p class="timeline-details">$400M → Microsoft</p>
+                        <p class="timeline-description">World's first free web-based email service</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h3>i-flex Solutions</h3>
+                        <p class="timeline-founder">Rajesh Hukku</p>
+                        <p class="timeline-details">Majority stake → Oracle</p>
+                        <p class="timeline-description">Banking software solutions</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2009</div>
+                    <div class="timeline-content">
+                        <h3>LogicVision</h3>
+                        <p class="timeline-founder">Vinod Agarwal</p>
+                        <p class="timeline-details">Acquired by Synopsys</p>
+                        <p class="timeline-description">Electronic design automation</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Sierra Atlantic</h3>
+                        <p class="timeline-founder">Raju Reddy</p>
+                        <p class="timeline-details">Acquired by Hitachi Consulting</p>
+                        <p class="timeline-description">IT services company</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2013</div>
+                    <div class="timeline-content">
+                        <h3>RedBus</h3>
+                        <p class="timeline-founder">Phanindra Sama</p>
+                        <p class="timeline-details">$138M → Ibibo Group</p>
+                        <p class="timeline-description">India's first online bus booking platform</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-content">
+                        <h3>SanDisk</h3>
+                        <p class="timeline-founder">Sanjay Mehrotra</p>
+                        <p class="timeline-details">$19B → Western Digital</p>
+                        <p class="timeline-description">Flash memory pioneer - largest BITSian exit</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-content">
+                        <h3>Media.net</h3>
+                        <p class="timeline-founder">Divyank Turakhia</p>
+                        <p class="timeline-details">$900M → Chinese consortium</p>
+                        <p class="timeline-description">Contextual advertising platform</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <h3>BigBasket</h3>
+                        <p class="timeline-founder">Hari Menon</p>
+                        <p class="timeline-details">Majority stake → Tata Digital</p>
+                        <p class="timeline-description">India's largest online grocery platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geographic Distribution -->
+    <section id="geography" class="section geography-section">
+        <div class="container">
+            <h2 class="section-title">Geographic Distribution</h2>
+            <div class="geography-content">
+                <div class="chart-container">
+                    <canvas id="tierChart" width="400" height="400"></canvas>
+                </div>
+                <div class="geography-stats">
+    <div class="tier-card tier-1">
+        <div class="tier-header">
+            <h3>Tier 1 Cities</h3>
+            <div class="tier-stats">
+                <span class="tier-count">0</span>
+                <span class="tier-percentage">0%</span>
+            </div>
+        </div>
+        <div class="tier-cities"></div>
+    </div>
+    
+    <div class="tier-card tier-2">
+        <div class="tier-header">
+            <h3>Tier 2 Cities</h3>
+            <div class="tier-stats">
+                <span class="tier-count">0</span>
+                <span class="tier-percentage">0%</span>
+            </div>
+        </div>
+        <div class="tier-cities"></div>
+    </div>
+    
+    <div class="tier-card tier-3">
+        <div class="tier-header">
+            <h3>Tier 3 Cities</h3>
+            <div class="tier-stats">
+                <span class="tier-count">0</span>
+                <span class="tier-percentage">0%</span>
+            </div>
+        </div>
+        <div class="tier-cities"></div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BITS Ecosystem -->
+    <section id="ecosystem" class="section ecosystem-section">
+        <div class="container">
+            <h2 class="section-title">BITS Ecosystem Advantages</h2>
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">🗓️</div>
+                    <h3>Flexible Attendance Curriculum</h3>
+                    <p>Freedom to focus on entrepreneurship and innovation without mandatory attendance</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">🚀</div>
+                    <h3>Official Gap Year</h3>
+                    <p>One-year official gap for building ventures (introduced in 2022)</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">🏢</div>
+                    <h3>Technology Business Incubators</h3>
+                    <p>Three dedicated incubators across Pilani, Goa, and Hyderabad campuses</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">👼</div>
+                    <h3>BITS Spark Angel Network</h3>
+                    <p>Alumni angel network providing seed capital and mentorship</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">⚡</div>
+                    <h3>Conquest Accelerator</h3>
+                    <p>India's largest student-run accelerator program</p>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">💰</div>
+                    <h3>Rakesh Kapoor Innovation Centre</h3>
+                    <p>$1.2M innovation center established in 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BITS Pilani: India's Entrepreneurship Powerhouse - Data from open sources</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

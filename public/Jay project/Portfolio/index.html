@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITS Pilani: The Unicorn Factory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js for interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>BITS Pilani</h3>
+            </div>
+            <div class="nav-menu">
+                <button class="nav-btn active" data-page="page1">The Unicorn Factory</button>
+                <button class="nav-btn" data-page="page2">Ecosystem & Impact</button>
+</button>
+            </div>
+        </div>
+    </nav>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h3>BITS Pilani Entrepreneurship</h3>
+        </div>
+        <div class="nav-menu">
+            <button class="nav-btn active" data-page="page1">The Unicorn Factory</button>
+            <button class="nav-btn" data-page="page2">Ecosystem & Impact</button>
+            <!-- Admin button removed from here -->
+        </div>
+    </div>
+</nav>
+
+<!-- Admin button positioned in top right corner -->
+<button class="nav-btn nav-btn--admin" data-page="admin" title="Admin Panel">
+    ⚙️
+</button>
+    <!-- Page 1: The Unicorn Factory -->
+    <div id="page1" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">BITS PILANI: THE UNICORN FACTORY</h1>
+                    <p class="hero-subtitle">15 Unicorns • $60+ Billion Combined Valuation • 1,500+ Startups</p>
+                    <div class="hero-stats">
+                       <div class="stat-card">
+                            <div class="stat-number">1,500+</div>
+                            <div class="stat-label">Total Startups</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">657</div>
+                            <div class="stat-label">Funded Startups</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Unicorns</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">$60B+</div>
+                            <div class="stat-label">Combined Valuation</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Major Acquisitions</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Years of Success</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Top Unicorns Section -->
+<section class="top-unicorns">
+    <div class="container">
+        <h2 class="section-title">Top 5 BITSian Unicorns</h2>
+        <div class="unicorns-grid">
+            <div class="unicorn-card">
+                <div class="unicorn-icon">📱</div>
+                <h3>SanDisk</h3>
+                <div class="unicorn-valuation">$19B</div>
+                <div class="unicorn-founder">Sanjay Mehrotra</div>
+                <div class="unicorn-exit">Acquired by Western Digital (2016)</div>
+            </div>
+            <div class="unicorn-card">
+                <div class="unicorn-icon">🍔</div>
+                <h3>Swiggy</h3>
+                <div class="unicorn-valuation">$11B+</div>
+                <div class="unicorn-founder">Sriharsha Majety</div>
+                <div class="unicorn-exit">Current Valuation</div>
+            </div>
+            <div class="unicorn-card">
+                <div class="unicorn-icon">💱</div>
+                <h3>FalconX</h3>
+                <div class="unicorn-valuation">$8B</div>
+                <div class="unicorn-founder">Raghu Yarlagadda</div>
+                <div class="unicorn-exit">Current Valuation</div>
+            </div>
+            <div class="unicorn-card">
+                <div class="unicorn-icon">🚀</div>
+                <h3>Postman</h3>
+                <div class="unicorn-valuation">$7.5B</div>
+                <div class="unicorn-founder">Abhinav Asthana</div>
+                <div class="unicorn-exit">Current Valuation</div>
+            </div>
+            <div class="unicorn-card">
+                <div class="unicorn-icon">🏢</div>
+                <h3>OfBusiness</h3>
+                <div class="unicorn-valuation">$5B</div>
+                <div class="unicorn-founder">Asish Mohapatra & Bhuvan Gupta</div>
+                <div class="unicorn-exit">Current Valuation</div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Top Unicorns Section -->
+        <section class="top-unicorns">
+            <div class="container">
+                <h2 class="section-title">BITSian Unicorns by Valuation</h2>
+                <div class="chart-container">
+                    <canvas id="unicornsChart" width="800" height="400"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Major Acquisitions Timeline -->
+        <section class="acquisitions-timeline">
+            <div class="container">
+                <h2 class="section-title">Major Acquisitions Timeline</h2>
+                <div class="timeline" id="acquisitionsTimeline">
+                    <!-- Timeline items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Features -->
+        <section class="ecosystem-features">
+            <div class="container">
+                <h2 class="section-title">What Makes BITS Different</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Flexible Attendance Policy</h3>
+                        <p>Freedom to focus on entrepreneurship and innovation</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Startup Gap Year</h3>
+                        <p>Official policy allowing gap year for startup building (2022)</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏢</div>
+                        <h3>Technology Business Incubators</h3>
+                        <p>Dedicated incubators across all campuses</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>Innovation Center</h3>
+                        <p>Rakesh Kapoor Innovation Centre for startup support</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Angel Network</h3>
+                        <p>Angel investment network of successful alumni</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Accelerator Program</h3>
+                        <p>Hybrid program for startup acceleration</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page 2: Ecosystem & Impact -->
+    <div id="page2" class="page">
+        <!-- Geographic Diversity -->
+        <section class="geographic-diversity">
+            <div class="container">
+                <h2 class="section-title">Geographic Diversity of BITS Founders</h2>
+                <div class="diversity-content">
+                    <div class="diversity-chart">
+                        <canvas id="diversityChart" width="400" height="400"></canvas>
+                    </div>
+                    <div class="diversity-stats" id="diversityStats">
+                        <!-- Stats will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sector Breakdown -->
+        <section class="sector-breakdown">
+            <div class="container">
+                <h2 class="section-title">Sector-wise Breakdown</h2>
+                <div class="chart-container">
+                    <canvas id="sectorChart" width="800" height="250"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Timeline -->
+        <section class="success-timeline">
+    <div class="container">
+        <h2 class="section-title">30 Years of Entrepreneurial Excellence</h2>
+        <div class="chart-container">
+            <div class="timeline-container">
+                <div class="timeline-controls">
+                    <button id="toggleScale">Toggle Log Scale</button>
+                    <input type="text" id="search" placeholder="Search companies...">
+                </div>
+                <canvas id="timelineChart"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="admin" class="page">
+        <div class="container">
+            <h2 class="section-title">Admin Panel</h2>
+            
+            <!-- Unicorns Data Editor -->
+            <div class="admin-section">
+                <h3>Top Unicorns Data</h3>
+                <div class="form-group">
+                    <input type="text" id="unicornName" placeholder="Company Name">
+                    <input type="text" id="unicornValuation" placeholder="Valuation (e.g., $19B)">
+                    <input type="text" id="unicornFounder" placeholder="Founder Name">
+                    <select id="unicornSector">
+                        <option value="Tech/Software">Tech/Software</option>
+                        <option value="Food Delivery">Food Delivery</option>
+                        <option value="Fintech">Fintech</option>
+                        <option value="E-commerce">E-commerce</option>
+                        <option value="EdTech">EdTech</option>
+                        <option value="Gaming">Gaming</option>
+                    </select>
+                    <button onclick="addUnicorn()">Add Unicorn</button>
+                </div>
+                <div id="unicornsList" class="data-list"></div>
+            </div>
+
+            <!-- Geographic Distribution Editor -->
+            <div class="admin-section">
+                <h3>Geographic Distribution</h3>
+                <div class="form-group">
+                    <label>Tier 1 Cities: <input type="number" id="tier1Count" value="7" onchange="updateGeographicChart()"></label>
+                    <label>Tier 2 Cities: <input type="number" id="tier2Count" value="9" onchange="updateGeographicChart()"></label>
+                    <label>Tier 3 Cities: <input type="number" id="tier3Count" value="5" onchange="updateGeographicChart()"></label>
+                </div>
+            </div>
+
+            <!-- Sector Data Editor -->
+            <div class="admin-section">
+                <h3>Sector Breakdown</h3>
+                <div class="form-group">
+                    <input type="text" id="sectorName" placeholder="Sector Name">
+                    <input type="number" id="sectorCount" placeholder="Number of Companies">
+                    <button onclick="addSector()">Add Sector</button>
+                </div>
+                <div id="sectorsList" class="data-list"></div>
+            </div>
+
+            <!-- Timeline Data Editor -->
+            <div class="admin-section">
+                <h3>Success Timeline</h3>
+                <div class="form-group">
+                    <input type="number" id="timelineYear" placeholder="Year">
+                    <input type="text" id="timelineMilestone" placeholder="Milestone">
+                    <input type="number" id="timelineValuation" placeholder="Valuation (Billions)" step="0.1">
+                    <button onclick="addTimelineEvent()">Add Event</button>
+                </div>
+                <div id="timelineList" class="data-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

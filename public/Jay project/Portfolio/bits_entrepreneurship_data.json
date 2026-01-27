@@ -1,0 +1,246 @@
+{
+  "headline_stats": {
+    "total_startups": "1,500+",
+    "funded_startups": 657,
+    "unicorns": 15,
+    "combined_valuation": "$60+ Billion",
+    "major_acquisitions": 8,
+    "years_of_success": "30+ years (1996-2025)"
+  },
+  "top_unicorns": [
+    {
+      "name": "SanDisk",
+      "valuation": "$19B",
+      "founder": "Sanjay Mehrotra",
+      "exit": "Acquired by Western Digital (2016)"
+    },
+    {
+      "name": "Swiggy",
+      "valuation": "$11B+",
+      "founder": "Sriharsha Majety",
+      "exit": "Current Valuation"
+    },
+    {
+      "name": "FalconX",
+      "valuation": "$8B",
+      "founder": "Raghu Yarlagadda",
+      "exit": "Current Valuation"
+    },
+    {
+      "name": "Postman",
+      "valuation": "$7.5B",
+      "founder": "Abhinav Asthana",
+      "exit": "Current Valuation"
+    },
+    {
+      "name": "OfBusiness",
+      "valuation": "$5B",
+      "founder": "Asish Mohapatra & Bhuvan Gupta",
+      "exit": "Current Valuation"
+    }
+  ],
+  "major_acquisitions": [
+    {
+      "company": "Hotmail",
+      "amount": "$400M",
+      "acquirer": "Microsoft",
+      "year": 1996,
+      "founder": "Sabeer Bhatia"
+    },
+    {
+      "company": "RedBus",
+      "amount": "$138M",
+      "acquirer": "Ibibo Group",
+      "year": 2013,
+      "founder": "Phanindra Sama"
+    },
+    {
+      "company": "SanDisk",
+      "amount": "$19B",
+      "acquirer": "Western Digital",
+      "year": 2016,
+      "founder": "Sanjay Mehrotra"
+    },
+    {
+      "company": "Media.net",
+      "amount": "$900M",
+      "acquirer": "Chinese Consortium",
+      "year": 2016,
+      "founder": "Divyank Turakhia"
+    },
+    {
+      "company": "BigBasket",
+      "amount": "Majority Stake",
+      "acquirer": "Tata Digital",
+      "year": 2021,
+      "founder": "Hari Menon"
+    },
+    {
+      "company": "i-flex Solutions",
+      "amount": "Undisclosed",
+      "acquirer": "Oracle",
+      "year": 2005,
+      "founder": "Rajesh Hukku"
+    },
+    {
+      "company": "Sierra Atlantic",
+      "amount": "Undisclosed",
+      "acquirer": "Hitachi Consulting",
+      "year": 2010,
+      "founder": "Raju Reddy"
+    }
+  ],
+  "geographic_distribution": {
+    "tier_1_cities": {
+      "count": 7,
+      "percentage": "33.3%",
+      "key_cities": [
+        "Mumbai (6 founders)",
+        "Bangalore",
+        "Pune",
+        "Noida"
+      ]
+    },
+    "tier_2_cities": {
+      "count": 9,
+      "percentage": "42.9%",
+      "key_cities": [
+        "Chandigarh",
+        "Vijayawada",
+        "Kanpur",
+        "Lucknow",
+        "Ajmer"
+      ]
+    },
+    "tier_3_cities": {
+      "count": 5,
+      "percentage": "23.8%",
+      "key_cities": [
+        "Nizamabad (2 founders)",
+        "Basti",
+        "Udhampur"
+      ]
+    }
+  },
+  "sector_wise_breakdown": [
+    {
+      "sector": "Fintech",
+      "companies": [
+        "Groww",
+        "Zeta",
+        "FalconX"
+      ],
+      "count": 3
+    },
+    {
+      "sector": "E-commerce/Food Tech",
+      "companies": [
+        "Swiggy",
+        "BigBasket"
+      ],
+      "count": 2
+    },
+    {
+      "sector": "SaaS/Enterprise Tech",
+      "companies": [
+        "Postman",
+        "SanDisk",
+        "Media.net"
+      ],
+      "count": 3
+    },
+    {
+      "sector": "EdTech",
+      "companies": [
+        "Eruditus",
+        "Thinkerbell Labs"
+      ],
+      "count": 2
+    },
+    {
+      "sector": "B2B Commerce",
+      "companies": [
+        "OfBusiness"
+      ],
+      "count": 1
+    },
+    {
+      "sector": "Gaming",
+      "companies": [
+        "MPL"
+      ],
+      "count": 1
+    },
+    {
+      "sector": "Hardware/Manufacturing",
+      "companies": [
+        "Hi-Tech Gears",
+        "MIRC Electronics"
+      ],
+      "count": 2
+    }
+  ],
+  "bits_ecosystem_stats": {
+    "campuses": 4,
+    "incubators": 3,
+    "supported_startups": "170+ since inception",
+    "recent_startups": "80+ in last 3 years",
+    "innovation_centers": 1,
+    "innovation_center_investment": "$1.2M donation",
+    "startup_policy": "One year gap allowed for startup building",
+    "attendance_policy": "0% mandatory attendance",
+    "accelerator_program": "7-week hybrid program"
+  },
+  "key_differentiators": [
+    "Zero attendance policy allowing time for entrepreneurship",
+    "One-year gap policy for startup building (2022)",
+    "3 Technology Business Incubators across campuses",
+    "BITS Spark angel investment network",
+    "Strong alumni network of 5000+ in US",
+    "MIT-influenced curriculum with flexibility",
+    "Conquest - India's largest student-run accelerator",
+    "$1.2M Rakesh Kapoor Innovation Centre"
+  ],
+  "success_timeline": [
+    {
+      "year": 1996,
+      "milestone": "Hotmail founded and sold to Microsoft"
+    },
+    {
+      "year": 2004,
+      "milestone": "TBI established at BITS Pilani"
+    },
+    {
+      "year": 2006,
+      "milestone": "RedBus founded"
+    },
+    {
+      "year": 2013,
+      "milestone": "RedBus acquired for $138M"
+    },
+    {
+      "year": 2016,
+      "milestone": "SanDisk sold for $19B, Media.net for $900M"
+    },
+    {
+      "year": 2018,
+      "milestone": "Swiggy becomes unicorn"
+    },
+    {
+      "year": 2021,
+      "milestone": "Multiple unicorns: Postman, Eruditus, OfBusiness"
+    },
+    {
+      "year": 2022,
+      "milestone": "BITS allows one-year startup gap"
+    },
+    {
+      "year": 2023,
+      "milestone": "Rakesh Kapoor Innovation Centre opened"
+    },
+    {
+      "year": 2024,
+      "milestone": "15 unicorns, $60B+ combined valuation"
+    }
+  ]
+}

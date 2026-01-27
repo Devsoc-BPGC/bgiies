@@ -1,0 +1,5 @@
+Treatment,Healing Time (Days),Cost (INR),Infection Rate (%),Scar Formation (%),Burn Depth Treated,Side Effects
+Traditional (Silver Sulfadiazine),45,15000,20,60,1st-2nd degree,SJS/TEN Risk
+Burnol/Burn-Lite,7,300,5,30,Minor 1st degree,Minimal
+Jatyadi Oil,45,700,15,50,1st-2nd degree,Minimal
+Burnicol,20,600,0,10,2nd-3rd degree,None reported
