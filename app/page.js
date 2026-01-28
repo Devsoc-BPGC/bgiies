@@ -3,7 +3,7 @@ import HomeCard from "../components/HomeCard";
 import { getSession } from "./lib/session";
 import ImpactSection from "../components/ImpactSection";
 import FocusPrograms from "../components/FocusPrograms";
-import MentorsSection from "../components/MentorsSection";
+import OrgStructure from "../components/OrgStructure";
 import InvestorsSection from "../components/InvestorsSection";
 import OurPartnersSection from '../components/OurPartnersSection';
 
@@ -102,8 +102,8 @@ const isUser = userRole === "user";  // Normal user
       {/* Focus Programs Section */}
       <FocusPrograms />
 
-      {/* Mentors Section */}
-      <MentorsSection />
+      {/* Organizational Structure Section */}
+      <OrgStructure />
       
       {/* Investors Section */}
       <InvestorsSection />

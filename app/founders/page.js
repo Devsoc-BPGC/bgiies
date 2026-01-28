@@ -37,7 +37,7 @@ export default function FoundersPage() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-8">
           {projects.map((project, projectIndex) => (
             <Link 
               key={projectIndex} 
@@ -81,7 +81,7 @@ export default function FoundersPage() {
         </div>
 
         {/* Coming Soon Section */}
-        <div className="mt-16 text-center py-12 bg-white rounded-2xl shadow-md border border-dashed border-gray-300">
+        {/* <div className="mt-16 text-center py-12 bg-white rounded-2xl shadow-md border border-dashed border-gray-300">
           <div className="text-5xl mb-4">🎓</div>
           <h3 
             className="text-xl font-semibold text-gray-400 mb-2"
@@ -92,7 +92,7 @@ export default function FoundersPage() {
           <p className="text-gray-400 text-sm">
             We&apos;re continuously adding more founder projects. Stay tuned!
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

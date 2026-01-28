@@ -5,9 +5,9 @@ import { Lexend } from 'next/font/google';
 const lexend = Lexend({ subsets: ['latin'] });
 
 const profiles = [
-  { name: "Prof. Anirban Roy", role: "Joint Secretary" , source: '/Prof_Anirban_Roy_Jt. Secretary.jpg'},
+  { name: "Prof. Anirban Roy", role: "Joint Secretary" , source: '/Prof_Anirban_Roy.jpg'},
   { name: "Sachin Arya", role: "Vice President" , source: '/Sachin_Arya_Vice President.jpg'},
-  { name: "Prof. Suman Kundu", role: "BGIIES President", source:'/Prof_Suman_Kundu_President.jpg' },
+  { name: "Prof. Suman Kundu", role: "BGIIES President", source:'/Prof_Suman_Kundu.jpg' },
   { name: "Ian Sardinha", role: "Treasurer",source:'/Ian_Sardinha_Treasurer.jpg' },
   { name: "Prof. D. M. Kulkarni", role: "Secretary", source:'/Prof_DM_Kulkarni_Secretary.jpg' },
 ];
@@ -63,7 +63,7 @@ const page = () => {
     width: 160,
     height: 160,
     margin: "0 auto 8px",
-    border: "3px solid #b58fff", // purple outline similar to screenshot
+    border: "3px solid #b58fff",
     borderRadius: 4,
     overflow: "hidden",
     display: "flex",

@@ -13,14 +13,14 @@ export default function Footer() {
           {/* Section 1: Legacy Info */}
           <div className="md:w-1/4">
             <p>
-              With over 2 decades of a strong legacy behind us, we boast of
+              With over 5 years of a strong legacy behind us, we boast of
               global grade facilities for impeccable solutions
             </p>
             <p className="mt-4">
               Call Toll free no:
               <br />
               <a href="tel:+9122XXXXXXXX" className="underline">
-                +91 22XXXXXXXX
+                0832-258-0254
               </a>
             </p>
           </div>
@@ -32,7 +32,7 @@ export default function Footer() {
               <br />
               BITS PILANI K.K. BIRLA GOA CAMPUS,
               <br />
-              ZUARINAGAR, GOA - 403712
+              ZUARINAGAR, GOA - 403726
             </p>
           </div>
 
@@ -44,25 +44,25 @@ export default function Footer() {
                 <Link href="/about" className="hover:underline">About Us</Link>
               </li>
               <li>
-                <Link href="/experts" className="hover:underline">Our Experts</Link>
+                <Link href="/contact" className="hover:underline">Our Experts</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:underline">Services</Link>
+                <Link href="/contact" className="hover:underline">Services</Link>
               </li>
               <li>
-                <Link href="/investment" className="hover:underline">Investment</Link>
+                <Link href="/contact" className="hover:underline">Investment</Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:underline">Contact Us</Link>
               </li>
               <li>
-                <Link href="/career" className="hover:underline">Career</Link>
+                <Link href="/contact" className="hover:underline">Career</Link>
               </li>
             </ul>
           </div>
 
           {/* Section 4: Newsletter */}
-          <div className="md:w-1/4">
+          {/* <div className="md:w-1/4">
             <p className="font-semibold">Newsletter</p>
             <p className="text-sm mb-2">Sign up for our newsletter & get latest updates.</p>
 
@@ -77,7 +77,7 @@ export default function Footer() {
                 Subscribe
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

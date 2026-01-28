@@ -14,7 +14,7 @@ export default function FocusPrograms() {
       {/* Image Container */}
       <div className="w-full max-w-6xl px-6">
         <img
-          src="/focus-programs.png"   // <--- Put your full combined image here
+          src="/focus-programs.jpg"   // <--- Put your full combined image here
           alt="Focus Programs"
           className="w-full h-auto rounded-lg shadow-lg object-cover"
         />

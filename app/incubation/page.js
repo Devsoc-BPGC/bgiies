@@ -214,21 +214,19 @@ export default function IncubationPage() {
         </div>
 
         {/* Testimonials Section */}
-        <div className="flex flex-col items-center mb-12 md:mb-20">
+        {/* <div className="flex flex-col items-center mb-12 md:mb-20">
           <h2 className={`${quicksand_bold.className} text-2xl md:text-3xl font-bold text-gray-800 mb-2 text-center`}>
             Testimonials
           </h2>
           <div className="w-16 h-1 bg-yellow-500 rounded-full transform -translate-x-12 md:-translate-x-20"></div>
         </div>
-        
-        {/* Carousel Container */}
-        {/* Changed: Adjusted margins for mobile */}
+
         <div className="mb-20 md:mb-48 px-4">
           <TestimonialCarousel
             quicksand_bold={quicksand_bold}
             quicksand_medium={quicksand_medium}
           />
-        </div>
+        </div> */}
 
       </div>
     </div>
