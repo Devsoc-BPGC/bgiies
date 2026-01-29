@@ -11,6 +11,13 @@ export function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
+    <div className="w-full flex flex-col items-center">
+      <div >
+        <h2 className="text-3xl font-semibold text-white text-center mb-6">
+          Login to Your Account
+        </h2>
+        <p className="text-white font-semibold text-center mb-8">For Society Members Only</p>
+      </div>
     <form
       action={loginAction}
       className="flex w-full max-w-xl flex-col gap-6 text-white z-20"
@@ -55,15 +62,16 @@ export function LoginForm() {
       <SubmitButton />
 
       {/* Signup Redirect */}
-      <div className="text-center mt-4">
+      {/* <div className="text-center mt-4">
         <a
           href="/signup"
           className="text-white underline hover:text-gray-200 transition"
         >
           Don’t have an account? Sign Up
         </a>
-      </div>
+      </div> */}
     </form>
+    </div>
   );
 }
 
