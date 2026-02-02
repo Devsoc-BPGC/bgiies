@@ -73,9 +73,9 @@ export default async function Navbar() {
     { href: "/gallery", text: "Gallery" },
     { href: "/founders", text: "Founders" },
     { href: "/bgiies", text: "BGIIES Till Now" },
-    { href: "/sisfs", text: "SISFS" },
+    // { href: "/sisfs", text: "SISFS" },
     { href: "/contact", text: "Contact Us" },
-    { href: "/dev", text: "Dev" },
+    // { href: "/dev", text: "Dev" },
   ];
 
   // 2. Create the final list including the dynamic Auth button
