@@ -4,7 +4,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 const profiles = [
   {
     name: "Prof. Anirban Roy",
-    role: "Joint Secretary",
+    role: "Joint Secretary and FIC",
     source: "/Prof_Anirban_Roy.jpg",
   },
   {
