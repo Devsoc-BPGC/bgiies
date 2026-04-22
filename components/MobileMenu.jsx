@@ -52,7 +52,7 @@ export default function MobileMenu({ isLoggedIn }) {
           <NavLinkItem href="/bgiies" text="BGIIES Till Now" onClick={() => setOpen(false)} />
           <NavLinkItem href="/sisfs" text="SISFS" onClick={() => setOpen(false)} />
           <NavLinkItem href="/contact" text="Contact Us" onClick={() => setOpen(false)} />
-          <NavLinkItem href="/dev" text="DEV" onClick={() => setOpen(false)} />
+          {/* <NavLinkItem href="/dev" text="DEV" onClick={() => setOpen(false)} /> */}
 
           {isLoggedIn ? (
             <NavLinkItem text="Log Out" isLogout onClick={() => setOpen(false)} />
